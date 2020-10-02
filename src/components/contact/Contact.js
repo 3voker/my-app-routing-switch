@@ -42,7 +42,8 @@ class Contact extends Component {
       return (
         <div className="Contact">
           <p>
-            Thank you, {this.state.formData.firstName}, for submitting the form.
+            Thank you, {this.state.formData.firstName}{" "}
+            {this.state.formData.lastName}, for submitting the form.
           </p>
           <button onClick={this.resetForm}>Reset Form</button>
         </div>
